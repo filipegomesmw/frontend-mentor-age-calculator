@@ -12,6 +12,14 @@ body {
     display: flex;
     flex-direction: column;
     gap: var(--space-s);
+
+    > span:first-of-type {
+      color: var(--color-neutral-7);
+      font-weight: bold;
+      letter-spacing: 0.2rem;
+      text-transform: uppercase;
+      font-size: var(--font-size-s);
+    }
   }
   &-container {
     display: flex;
@@ -40,12 +48,12 @@ body {
 
 .divider {
   &__one {
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid var(--color-neutral-5);
     background: red;
   }
 
   &__two {
-    border-top: 1px solid black;
+    border-top: 0px solid var(--color-neutral-5);
     background-color: pink;
   }
 }
@@ -58,6 +66,9 @@ body {
   font-style: italic;
   font-weight: bolder;
 
+  &__number{
+    color: var(--color-primary);
+  }
   &__years,
   &__months,
   &__days {
@@ -65,4 +76,9 @@ body {
     flex-direction: row;
     width: fit-content;
   }
+}
+
+input[type="number"] {
+    /* Changes the blinking cursor color */
+    caret-color: var(--color-primary);
 }
