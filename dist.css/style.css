@@ -1,0 +1,27 @@
+:root {
+  /* Colors */
+  --color-primary: #854cff;
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  height: auto;
+  width: auto;
+  padding: 20px;
+}
+.btn-primary img {
+  height: auto;
+  width: auto;
+}
+
+.date-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-s);
+}
+.date-container {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-m);
+}/*# sourceMappingURL=style.css.map */
