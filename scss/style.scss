@@ -1,6 +1,11 @@
 @use "variables";
 @use "base";
 @use "buttons";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+}
 
 .date {
   &-inputs {
@@ -12,5 +17,52 @@
     display: flex;
     flex-direction: row;
     gap: var(--space-m);
+    padding-bottom: 20px;
+  }
+}
+
+.container {
+  &-divider {
+    &__button {
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      align-self: center;
+    }
+    &__wrapper {
+      display: flex;
+    }
+  }
+  &__submit-button {
+    width: fit-content;
+  }
+}
+
+.divider {
+  &__one {
+    border-bottom: 1px solid black;
+    background: red;
+  }
+
+  &__two {
+    border-top: 1px solid black;
+    background-color: pink;
+  }
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+
+  font-size: 70px;
+  font-style: italic;
+  font-weight: bolder;
+
+  &__years,
+  &__months,
+  &__days {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
   }
 }
