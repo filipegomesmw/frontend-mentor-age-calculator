@@ -47,7 +47,7 @@ body {
   font-weight: bold;
   letter-spacing: 0.2rem;
   text-transform: uppercase;
-  font-size: var(--font-size-s);
+  font-size: var(--font-size-label);
 }
 .date-container {
   display: flex;
@@ -99,4 +99,23 @@ body {
 input[type=number] {
   /* Changes the blinking cursor color */
   caret-color: var(--color-primary);
+}
+input[type=number]::-moz-placeholder {
+  color: red;
+  font-weight: bold;
+}
+input[type=number]::placeholder {
+  color: red;
+  font-weight: bold;
+}
+
+.form-control[data-input] {
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 115px;
+  padding: var(--space-base);
+  font-size: var(--font-size-h5);
+  font-weight: bold;
 }/*# sourceMappingURL=style.css.map */
