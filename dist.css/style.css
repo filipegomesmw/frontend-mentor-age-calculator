@@ -35,7 +35,7 @@
   width: 100%;
   max-width: 680px;
   padding: var(--space-xxl);
-  border-radius: 24px 24px 100px 24px;
+  border-radius: 24px 24px 30% 24px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 
@@ -85,7 +85,6 @@ body {
   display: flex;
   flex-direction: row;
   gap: var(--space-m);
-  padding-bottom: 20px;
 }
 
 .container-divider__button {
@@ -103,12 +102,10 @@ body {
 }
 
 .divider__one {
-  border-bottom: 2px solid var(--color-neutral-5);
-  background: red;
+  border-bottom: 1px solid var(--color-neutral-3);
 }
 .divider__two {
   border-top: 0px solid var(--color-neutral-5);
-  background-color: pink;
 }
 
 .result {
@@ -148,10 +145,11 @@ input[type=number]::placeholder {
   width: -moz-fit-content;
   width: fit-content;
   max-width: 115px;
-  padding: var(--space-base);
+  padding: 10px var(--space-base);
   font-size: var(--font-size-h5);
   font-weight: bold;
   color: var(--color-neutral-6);
+  border-color: var(--color-neutral-3);
 }
 .form-control[data-input]:focus {
   border-color: var(--color-primary);
