@@ -15,6 +15,7 @@
   /* Dark Theme */
   --background-dark-theme: rgba(255, 255, 255, .1);
   --background-dark-theme-hover: rgba(255, 255, 255, .2);
+  --color-error: #ff5757;
 }
 
 .main {
@@ -65,6 +66,21 @@
   width: auto;
 }
 
+span.validation-message {
+  color: var(--color-error);
+  font-size: 12px;
+  font-style: italic;
+  margin-top: 5px;
+}
+
+input.not-valid {
+  border-color: var(--color-error);
+}
+
+.date-inputs:has(.not-valid) > span:first-of-type {
+  color: var(--color-error);
+}
+
 body {
   font-family: "Poppins", sans-serif;
 }
@@ -106,6 +122,12 @@ body {
 }
 .divider__two {
   border-top: 0px solid var(--color-neutral-5);
+}
+
+.input-number {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
 }
 
 .result {

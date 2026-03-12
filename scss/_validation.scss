@@ -1,0 +1,20 @@
+@use "variables";
+
+// To style Outsystems error message on input fields
+// OutSystems error message text
+span.validation-message {
+    color: var(--color-error);
+    font-size: 12px;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+// input border
+input.not-valid {
+    border-color: var(--color-error);
+}
+
+// Turn the Label red if the input is invalid
+.date-inputs:has(.not-valid) > span:first-of-type {
+    color: var(--color-error);
+}
