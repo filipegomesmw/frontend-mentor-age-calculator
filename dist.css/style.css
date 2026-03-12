@@ -17,6 +17,38 @@
   --background-dark-theme-hover: rgba(255, 255, 255, .2);
 }
 
+.main {
+  background-color: var(--color-neutral-2);
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: transparent;
+}
+
+.content-middle {
+  background-color: var(--color-neutral-0);
+  width: 100%;
+  max-width: 680px;
+  padding: var(--space-xxl);
+  border-radius: 24px 24px 100px 24px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.ThemeGrid_Container {
+  width: 100%;
+  max-width: none;
+  padding: 0 20px;
+}
+
+.layout .main-content.ThemeGrid_Container {
+  justify-items: center;
+}
+
 .btn-primary {
   background-color: var(--color-primary);
   border-radius: 50%;
@@ -94,6 +126,7 @@ body {
   flex-direction: row;
   width: -moz-fit-content;
   width: fit-content;
+  gap: var(--space-s);
 }
 
 input[type=number] {
@@ -101,11 +134,11 @@ input[type=number] {
   caret-color: var(--color-primary);
 }
 input[type=number]::-moz-placeholder {
-  color: red;
+  color: var(--color-neuytral-5);
   font-weight: bold;
 }
 input[type=number]::placeholder {
-  color: red;
+  color: var(--color-neuytral-5);
   font-weight: bold;
 }
 
@@ -118,4 +151,9 @@ input[type=number]::placeholder {
   padding: var(--space-base);
   font-size: var(--font-size-h5);
   font-weight: bold;
+  color: var(--color-neutral-6);
+}
+.form-control[data-input]:focus {
+  border-color: var(--color-primary);
+  outline: none;
 }/*# sourceMappingURL=style.css.map */

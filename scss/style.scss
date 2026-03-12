@@ -75,6 +75,7 @@ body {
     display: flex;
     flex-direction: row;
     width: fit-content;
+    gap: var(--space-s);
   }
 }
 
@@ -83,7 +84,7 @@ input[type="number"] {
   caret-color: var(--color-primary);
 
   &::placeholder {
-    color: red;
+    color: var(--color-neuytral-5);
     font-weight: bold;
   }
 }
@@ -95,4 +96,13 @@ input[type="number"] {
   padding: var(--space-base);
   font-size: var(--font-size-h5);
   font-weight: bold;
+  color: var(--color-neutral-6);
+
+  &:focus {
+    // when the user clicks the input field, 
+    // the border color changes to the primary 
+    // color and the outline is removed
+    border-color: var(--color-primary);
+    outline: none;
+  }
 }
