@@ -48,20 +48,21 @@
 
 .layout .main-content.ThemeGrid_Container {
   justify-items: center;
+  align-content: center;
 }
 
-.btn-primary {
+.desktop .btn-primary, .tablet .btn-primary, .phone .btn-primary {
   background-color: var(--color-primary);
   border-radius: 50%;
-  height: auto;
-  width: auto;
+  height: 86px;
+  width: 86px;
   padding: 20px;
 }
-.btn-primary:hover {
+.desktop .btn-primary:hover, .tablet .btn-primary:hover, .phone .btn-primary:hover {
   background-color: black;
   border-color: black;
 }
-.btn-primary img {
+.desktop .btn-primary img, .tablet .btn-primary img, .phone .btn-primary img {
   height: auto;
   width: auto;
 }
@@ -170,8 +171,17 @@ input[type=number]::placeholder {
   padding: 10px var(--space-base);
   font-size: var(--font-size-h5);
   font-weight: bold;
-  color: var(--color-neutral-6);
   border-color: var(--color-neutral-3);
+}
+.form-control[data-input]::-moz-placeholder {
+  color: var(--color-neutral-5);
+  font-weight: bold;
+  opacity: 1;
+}
+.form-control[data-input]::placeholder {
+  color: var(--color-neutral-5);
+  font-weight: bold;
+  opacity: 1;
 }
 .form-control[data-input]:focus {
   border-color: var(--color-primary);

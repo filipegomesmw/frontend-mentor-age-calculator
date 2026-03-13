@@ -101,8 +101,13 @@ input[type="number"] {
   padding: 10px var(--space-base);
   font-size: var(--font-size-h5);
   font-weight: bold;
-  color: var(--color-neutral-6);
   border-color: var(--color-neutral-3);
+
+  &::placeholder {
+    color: var(--color-neutral-5);
+    font-weight: bold;
+    opacity: 1;
+  }
 
   &:focus {
     // when the user clicks the input field, 
