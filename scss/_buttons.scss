@@ -1,22 +1,35 @@
-@use 'variables';
+@use "variables";
 
-.desktop, .tablet, .phone{
-.btn {
-    &-primary{
-        background-color: var(--color-primary);
-        border-radius: 50%;
-        height: 86px;
-        width: 86px;
-        padding: 20px;
-        &:hover {
-            background-color: black;
-            border-color: black;
-        }
 
-    & img {
+  .btn {
+    &-primary {
+      background-color: var(--color-primary);
+      border-radius: 50%;
+      height: 86px;
+      width: 86px;
+      padding: 20px;
+
+      &:hover {
+        background-color: black;
+        border-color: black;
+      }
+
+      & img {
         height: auto;
         width: auto;
+      }
+
+      .tablet &,
+      .phone & {
+        height: 50px;
+        width: 50px;
+        padding: 12px;
+
+        & img {
+            height: 42px;
+            width: 42px;
+        }
+      }
     }
-    }
-}  
-} 
+  }
+

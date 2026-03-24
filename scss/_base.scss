@@ -1,36 +1,43 @@
 @use "variables";
 
 .main {
-    background-color: var(--color-neutral-2);
+  background-color: var(--color-neutral-2);
 }
 
 .content {
-    // Responsisble for centering the content
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    min-height: 100vh;
-    background-color: transparent;
-}
+  // Responsisble for centering the content
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: transparent;
 
-.content-middle {
+  &-middle {
     background-color: var(--color-neutral-0);
     width: 100%;
     max-width: 680px;
-    padding: var(--space-xxl);
-    border-radius: 24px 24px 30% 24px;
+    border-radius: 24px 24px 110px 24px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    padding: var(--space-xxl);
 
+    .phone &,
+    .tablet & {
+      padding: var(--space-xxl) var(--space-m);
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-m);
+    }
+  }
 }
 
 .ThemeGrid_Container {
-    width: 100%;
-    max-width: none;
-    padding: 0 20px;
+  width: 100%;
+  max-width: none;
+  padding: 0 20px;
 }
 
 .layout .main-content.ThemeGrid_Container {
-    justify-items: center;
-    align-content: center;
+  justify-items: center;
+  align-content: center;
 }
