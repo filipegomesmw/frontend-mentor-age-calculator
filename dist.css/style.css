@@ -80,6 +80,11 @@
   height: 42px;
   width: 42px;
 }
+.phone .layout:not(.layout-native) .btn {
+  width: 50px;
+  height: 50px;
+  padding: 12px;
+}
 
 span.validation-message {
   color: var(--color-error);
@@ -159,10 +164,14 @@ body {
   font-weight: bolder;
   line-height: 1.2;
 }
+.phone .result, .tablet .result {
+  font-size: 60px;
+}
 .result__number {
   color: var(--color-primary);
 }
 .result__years, .result__months, .result__days {
+  font-size: 50px;
   display: flex;
   flex-direction: row;
   width: -moz-fit-content;

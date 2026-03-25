@@ -80,12 +80,17 @@ body {
   font-weight: bolder;
   line-height: 1.2;
 
+  .phone &, .tablet & {
+    font-size: 60px;
+  }
+
   &__number {
     color: var(--color-primary);
   }
   &__years,
   &__months,
   &__days {
+    font-size: 50px;
     display: flex;
     flex-direction: row;
     width: fit-content;
